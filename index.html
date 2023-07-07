@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="card2">
-                    <div class="card2-content">
+                    <div class="card2-content video">
                        
                         <video class="imgvietha" loop="true" autoplay="true" controls>
                             <source src="img/real.mp4" type="video/mp4" />
@@ -143,5 +143,12 @@
         close.addEventListener('click', function(){
             boxmail.classList.remove('active')
         })
+        var video = document.querySelector('video');
+    video.addEventListener('mouseover', function () {
+        video.play();
+    });
+    video.addEventListener('mouseout', function () {
+        video.pause();
+    });
     </script>
 </html>
